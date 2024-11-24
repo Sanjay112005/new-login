@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      color: #343a40;
+      font-size: 2.5rem;
+    }
+
+    p {
+      color: #495057;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px 30px;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .code-block {
+      margin-top: 20px;
+      background: #f8f9fa;
+      border-left: 5px solid #007bff;
+      padding: 10px;
+      font-family: "Courier New", Courier, monospace;
+      color: #212529;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hi, This is My First Website!</h1>
+    <p>I am currently working on my portfolio.</p>
+    <p>Below is my first MongoDB connection:</p>
+    <div class="code-block">
+      <code>
+        const mongoose = require('mongoose');<br>
+        mongoose.connect('mongodb://localhost:27017/mydatabase', { useNewUrlParser: true, useUnifiedTopology: true })<br>
+        .then(() => console.log('Connected to MongoDB'))<br>
+        .catch(err => console.error('Connection error:', err));
+      </code>
+    </div>
+  </div>
+</body>
+</html>
